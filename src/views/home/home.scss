@@ -1,0 +1,38 @@
+.container-Home {
+    height: 851px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(26, 25, 25);
+    
+    .container-login-logout {
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+            
+            .titulos-home {
+                text-decoration: none;
+                color: white;
+                background-color: rgb(137, 5, 199);
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+        }
+    }
+
+    .home-bienvenida {
+        margin: 20px 0;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+
+    .home-btn-salir {
+        padding: 10px;
+        width: 100px;
+        border: none;
+        border: 2px solid black;
+        margin: 20px 0;
+    }
+}
