@@ -17,7 +17,7 @@ const Home = (props) => {
             <h2 className='home-bienvenida'>
                 {props.name 
                 ? `Bienvenido - ${props.name}` 
-                : 'Inicie Sesión'}
+                : 'Inicie sesión para continuar'}
             </h2>
             <div className='container-login-logout'>
                 <h2>

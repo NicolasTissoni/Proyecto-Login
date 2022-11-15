@@ -40,26 +40,27 @@ const Login = () => {
         <div className='container-Login'>
             <div className='innerBox'>
                 <h1 className='headig'>Login</h1>
-                <InputControl label='Email'
+                <InputControl type='email' label='Email'
                 onChange={(event) => setValues((prev) => 
                     ({...prev, email:event.target.value}))}
                 placeholder='Ingrese su Correo'
                 />
-                <InputControl label='Contraseña'
+                <InputControl type='password' label='Contraseña'
                 onChange={(event) => setValues((prev) => 
                     ({...prev, pass:event.target.value}))}
                 placeholder='Ingrese su Contraseña'
                 />
                 <div className='footer'>
                     <b className='error'>{errorMsg}</b>
-                    <button onClick={loguearse} 
+                    <button className='btn-login' onClick={loguearse} 
                     disabled={submitButtonDisabled}
                     >
-                        Login Btn
+                        Iniciar Sesion
                     </button>
-                    <p>Crear Cuenta
+                    <p>
+                        Crear Cuenta
                         <span>
-                            <Link to='/signup'> Registarse</Link>
+                            <Link className='btn-login__register' to='/signup'> Registarse</Link>
                         </span>
                     </p>
                 </div>

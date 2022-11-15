@@ -56,7 +56,7 @@ const SignUp = () => {
                     setValues((prev) => 
                     ({...prev, email:event.target.value}))}
                 />
-                <InputControl label='Contraseña' 
+                <InputControl type='password' label='Contraseña' 
                 placeholder='Ingrese una Contraseña' 
                 onChange={(event) => 
                     setValues((prev) => 
@@ -64,7 +64,7 @@ const SignUp = () => {
                 />
                 <div className='footer'>
                     <b className='error'>{errorMsg}</b>
-                    <button onClick={registro} 
+                    <button className='btn-save' onClick={registro} 
                     disabled={submitButtonDisabled}
                     > 
                     Guardar
@@ -72,7 +72,7 @@ const SignUp = () => {
                     <p>
                         Si ya tienes una cuenta inicia sesión
                         <span>
-                            <Link to='/login'> Login</Link>
+                            <Link className='btn-register-login' to='/login'> Login</Link>
                         </span>
                     </p>
                 </div>

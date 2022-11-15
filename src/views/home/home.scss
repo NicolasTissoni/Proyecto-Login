@@ -1,10 +1,15 @@
+@import '../../styles/index.scss';
+
 .container-Home {
-    height: 851px;
+    height: 900px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(26, 25, 25);
+    background-color: $bg-color-1;
+    @include media(desktop) {
+        height: 1000px;
+    }
     
     .container-login-logout {
         h2 {
@@ -13,26 +18,24 @@
             
             .titulos-home {
                 text-decoration: none;
-                color: white;
-                background-color: rgb(137, 5, 199);
                 padding: 10px;
                 border-radius: 10px;
-                border: 2px solid white;
+                color: $bg-color-5;
             }
         }
     }
 
     .home-bienvenida {
         margin: 20px 0;
-        border-bottom: 2px solid white;
+        padding: 10px;
         color: white;
+        border-radius: 10px;
     }
 
     .home-btn-salir {
         padding: 10px;
         width: 100px;
         border: none;
-        border: 2px solid black;
         margin: 20px 0;
     }
 }

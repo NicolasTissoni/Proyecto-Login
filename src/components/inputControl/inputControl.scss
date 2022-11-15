@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+.container-InputControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    color: $bg-color-4;
+
+    .input {
+        outline: none;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        background-color: $bg-color-2;
+        border: 2px solid $bg-color-5;
+        width: 300px;
+        margin-top: 5px;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
+    }
+}
